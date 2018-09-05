@@ -101,3 +101,18 @@ nav h1{
   color: rgb(230, 230, 230);
   text-align: center;
 }
+
+.about-content{
+  border-top: 1em solid lightgray;
+  background-color: rgb(40, 40, 40);
+  width: 40%;
+  margin: 0 auto;
+  padding:2em;
+  color: white;
+  font-family: courier;
+  font-size: 1.5em;
+}
+
+.about-content h3{
+  font-weight:bold;
+}
