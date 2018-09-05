@@ -1,18 +1,18 @@
 nav{
   background-color: rgb(230, 230, 230);
   border-bottom: .1em solid gray;
-  height: 4em;
+  height: 7em;
 }
 
 nav h1{
   position: relative;
-  left: 40%;
+  left: 42%;
   display: inline;
-  top: .15em;
+  top: .65em;
 }
 
 #banner{
-  margin-top: 2em;
+  margin-top: 7em;
   width:100%;
   background-color: rgb(128, 108, 90);
 }
@@ -29,6 +29,7 @@ nav h1{
   display: inline;
   float: right;
   right: .2em;
+  top: 1em;
 }
 
 .navbar a {
@@ -43,6 +44,7 @@ nav h1{
   border: none;
   outline: none;
   padding: 1em;
+  position: relative;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
@@ -52,12 +54,14 @@ nav h1{
   -webkit-transition: -webkit-transform 1.5s;
   -ms-transition: -ms-transform 1.5s;
   transition: transform 1.5s;
+  font-size: 2em;
+  right: 2em;
 }
 
-.dropbtn:hover span{
-  transform:rotate(360deg);
- -ms-transform:rotate(360deg);
- -webkit-transform:rotate(360deg);
+.dropbtn:hover span {
+  transform:rotate(180deg);
+ -ms-transform:rotate(180deg);
+ -webkit-transform:rotate(180deg);
 }
 
 .dropdown-content {
@@ -67,6 +71,7 @@ nav h1{
   min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  top: 3.25em;
 }
 
 .dropdown-content a {
@@ -84,4 +89,15 @@ nav h1{
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+#about{
+  background-color: rgb(143, 58, 28);
+}
+
+#about h2{
+  margin:0;
+  padding:2em;
+  color: rgb(230, 230, 230);
+  text-align: center;
 }
