@@ -110,9 +110,10 @@ nav h1{
   padding:2em;
   color: white;
   font-family: courier;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .about-content h3{
   font-weight:bold;
+  font-size: 1em;
 }
