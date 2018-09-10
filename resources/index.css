@@ -22,6 +22,21 @@
   75% {transform: translate(31%, -100%); opacity: 1;}
   100%{transform: translate(31%, -351%);}
 }
+#intro img{
+  position: relative;
+  animation-name: arrowMove;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  margin: 0;
+  padding: 0;
+  left: 42%;
+  margin-top: 15%;
+}
+@keyframes arrowMove{
+  0%  {opacity: 0;margin-top: 40%;}
+  75% {opacity: 0;margin-top: 40%;}
+  100%{opacity: 1;margin-top: 15%;}
+}
 nav{
   background-color: rgb(230, 230, 230);
   border-bottom: .1em solid gray;
@@ -92,9 +107,11 @@ nav h1{
 }
 #about{
   background-color: rgb(143, 58, 28);
-  height: 4000px;
+  position: relative;
+  padding-bottom: 4em;
 }
 #about h2{
+  padding: 0;
   margin:0;
   padding:2em;
   color: rgb(230, 230, 230);
@@ -113,4 +130,11 @@ nav h1{
 .about-content h3{
   font-weight:bold;
   font-size: 1em;
+}
+#projects{
+  color: rgb(230 ,230, 230);
+  background-color: rgb(64, 79, 36);
+  margin: 0;
+  padding: 1em;
+  text-align: center;
 }

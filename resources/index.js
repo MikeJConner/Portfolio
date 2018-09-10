@@ -1,16 +1,20 @@
-$(document).ready(function() {
-  //change the integers below to match the height of your upper dive, which I called
-  //banner.  Just add a 1 to the last number.  console.log($(window).scrollTop())
-  //to figure out what the scroll position is when exactly you want to fix the nav
-  //bar or div or whatever.  I stuck in the console.log for you.  Just remove when
-  //you know the position.
-  $(window).scroll(function () {
-    if ($(window).scrollTop() > 400) {
-      $('#nav_bar').addClass('navbar-fixed-top');
-    }
-
-    if ($(window).scrollTop() < 401) {
-      $('#nav_bar').removeClass('navbar-fixed-top');
-    }
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
   });
 });
