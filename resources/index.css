@@ -4,65 +4,47 @@
   height: 100vh;
   width: 100%;
 }
-
 #intro h1{
   position: relative;
   top: 50%;
-  transform: translate(31%, -121%);
   padding: 0;
   margin: 0;
   font-size: 6em;
   font-family: courier;
   font-weight: bold;
+  animation-name: moveUp;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  transform: translate(31%, -351%);
 }
-
+@keyframes moveUp{
+  0%  {transform: translate(31%, -100%); opacity: 0;}
+  75% {transform: translate(31%, -100%); opacity: 1;}
+  100%{transform: translate(31%, -351%);}
+}
 nav{
   background-color: rgb(230, 230, 230);
   border-bottom: .1em solid gray;
   height: 7em;
 }
-
-.affix{
-  top: 0;
-  width: 100%;
-  z-index: 100;
-}
-
 nav h1{
   position: relative;
   left: 42%;
   display: inline;
   top: .65em;
 }
-
-#banner{
-  margin: 0;
-  width:100%;
-  background-color: rgb(128, 108, 90);
-}
-
-#banner img{
-  width:60%;
-  height:auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .dropdown{
   display: inline;
   float: right;
   right: .2em;
   top: 1em;
 }
-
 .navbar a {
   font-size: 1em;
   text-align: center;
   padding: 1em;
   text-decoration: none;
 }
-
 .dropdown .dropbtn {
   font-size: 1em;
   border: none;
@@ -73,7 +55,6 @@ nav h1{
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }
-
 .dropbtn span{
   -webkit-transition: -webkit-transform 1.5s;
   -ms-transition: -ms-transform 1.5s;
@@ -81,13 +62,11 @@ nav h1{
   font-size: 2em;
   right: 2em;
 }
-
 .dropbtn:hover span {
   transform:rotate(180deg);
  -ms-transform:rotate(180deg);
  -webkit-transform:rotate(180deg);
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -97,7 +76,6 @@ nav h1{
   z-index: 1;
   top: 3.25em;
 }
-
 .dropdown-content a {
   float: none;
   color: black;
@@ -106,27 +84,22 @@ nav h1{
   display: block;
   text-align: left;
 }
-
 .dropdown-content a:hover {
   background-color: #ddd;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 #about{
   background-color: rgb(143, 58, 28);
   height: 4000px;
 }
-
 #about h2{
   margin:0;
   padding:2em;
   color: rgb(230, 230, 230);
   text-align: center;
 }
-
 .about-content{
   border-top: 1em solid lightgray;
   background-color: rgb(40, 40, 40);
@@ -137,7 +110,6 @@ nav h1{
   font-family: courier;
   font-size: 1em;
 }
-
 .about-content h3{
   font-weight:bold;
   font-size: 1em;
